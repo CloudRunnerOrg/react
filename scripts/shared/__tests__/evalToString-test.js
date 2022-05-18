@@ -13,7 +13,7 @@ const parse = source => parser.parse(`(${source});`).program.body[0].expression;
 
 const parseAndEval = source => evalStringConcat(parse(source));
 
-describe('evalToString', () => {
+describe('evalToStringg', () => {
   it('should support StringLiteral', () => {
     expect(parseAndEval(`'foobar'`)).toBe('foobar');
     expect(parseAndEval(`'yowassup'`)).toBe('yowassup');
